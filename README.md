@@ -1,6 +1,6 @@
-# Notes Manager (CLI)
+# Notes Manager
 
-A simple Java CLI project to create and manage text-based notes using File I/O operations.
+A simple Java project to create and manage text-based notes using File I/O operations.
 
 ---
 

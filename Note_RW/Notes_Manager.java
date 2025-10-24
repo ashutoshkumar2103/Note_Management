@@ -7,6 +7,7 @@ public class Notes_Manager {
 
     // This class manages notes using FileReader and FileWriter for file operations
 
+    // Main method to run the Notes Manager application (starting point)
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -50,6 +51,7 @@ public class Notes_Manager {
         scanner.close();    
     }
 
+    // Method to write a note to the file
     public static void writeNoteToFile(String filePath, String note) {
         
         try (FileWriter writer = new FileWriter(filePath, true)) {
@@ -60,6 +62,7 @@ public class Notes_Manager {
         }
     }
 
+    // Method to read notes from the file
     public static void readNotesFromFile(String filePath) {
         boolean fileExists = false;
         StringBuilder notes = new StringBuilder();
@@ -82,6 +85,7 @@ public class Notes_Manager {
 
 
     //Optional method just to check for deletion of file
+    // Method to delete the notes file
     public static void deleteFile(String filePath) {
         File file = new File(filePath);
         if (file.delete()) {
